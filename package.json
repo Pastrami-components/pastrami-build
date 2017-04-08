@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://B-3PO@github.com/Pastrami-components/battr-build.git"
+    "url": "git+https://B-3PO@github.com/battrjs/battr-build.git"
   },
   "dependencies": {
     "del": "^2.2.2",
