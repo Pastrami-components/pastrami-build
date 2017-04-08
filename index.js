@@ -1,3 +1,9 @@
-exports.buildDebugJS = require('./lib/build-js');
-exports.buildDebugSCSS = require('./lib/build-scss');
 exports.bump = require('./lib/bump');
+exports.build = {
+  js: {
+    debug: require('./lib/build-js')
+  },
+  scss: {
+    debug: require('./lib/build-scss')
+  }
+};
