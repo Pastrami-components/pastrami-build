@@ -1,8 +1,7 @@
 {
-  "name": "pastrami-gulp",
+  "name": "@pastrami/pastrami-gulp",
   "version": "0.0.0",
   "license": "MIT",
-  "private": true,
   "main": "index.js",
   "devDependencies": {
     "del": "^2.2.2",
