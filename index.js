@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 var gulpSequence = require('gulp-sequence');
-var paths = require('./lib/default-config');
+var paths = require('./lib/default-config').paths;
 
 require('./lib/bump');
 require('./lib/build-js');
@@ -28,6 +28,6 @@ gulp.task('start-debug', gulpSequence(
   'watch'
 ));
 gulp.task('watch', function (e) {
-  gulp.watch(paths.scripts.all, 'build:watch:js');
+  gulp.watch(paths.scripts.all, ['build:watch:js']);
   // gulp.watch(paths.styles.all, ['build:dev:scss', 'build:dev:inject']);
 });
