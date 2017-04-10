@@ -1,6 +1,19 @@
 var gulp = require('gulp');
-var bump = require('./lib/bump');
-var buildJS = require('./lib/build-js');
-gulp.task('lint', buildJS.lint());
-gulp.task('build:debug:js', ['lint'], buildJS.debug());
-gulp.task('build:release:js', ['lint'], buildJS.release());
+var gulpSequence = require('gulp-sequence');
+
+require('./lib/bump');
+require('./lib/build-js');
+require('./lib/docs');
+require('./lib/es6-template-strings');
+
+gulp.task('build:debug', gulpSequence(
+  'build:debug:js',
+  'es6-template-strings'
+));
+gulp.task('build:release', gulpSequence(
+  'build:release:js'
+));
+gulp.task('docs', gulpSequence(
+  'docs:inject',
+  'docs:serve'
+));
