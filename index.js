@@ -4,7 +4,7 @@ var paths = require('./lib/default-config');
 
 require('./lib/bump');
 require('./lib/build-js');
-require('./lib/docs');
+require('./lib/docsApp');
 require('./lib/es6-template-strings');
 
 gulp.task('build:debug', gulpSequence(
