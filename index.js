@@ -1,6 +1,6 @@
-exports.bump = require('./lib/bump');
-exports.build = {
-  js: require('./lib/build-js'),
-  scss: require('./lib/build-scss')
-};
-exports.es6TemplateStrings = require('./lib/es6-template-strings');
+var gulp = require('gulp');
+var bump = require('./lib/bump');
+var buildJS = require('./lib/build-js');
+gulp.task('lint', buildJS.lint());
+gulp.task('build:debug:js', ['lint'], buildJS.debug());
+gulp.task('build:release:js', ['lint'], buildJS.release());

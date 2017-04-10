@@ -1,6 +1,6 @@
 {
   "name": "@battr/battr-build",
-  "version": "0.0.1-alpha.5",
+  "version": "0.0.1-alpha.6",
   "license": "MIT",
   "main": "index.js",
   "author": "b-3PO",
@@ -28,6 +28,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.0.0",
     "gulp-sequence": "^0.4.6",
+    "gulp-sourcemaps": "^2.5.1",
     "gulp-strip-comments": "^2.4.5",
     "gulp-tap": "^0.1.3",
     "gulp-util": "^3.0.7",
