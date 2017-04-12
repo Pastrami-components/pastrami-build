@@ -30,6 +30,6 @@ gulp.task('start-debug', gulpSequence(
   'watch'
 ));
 gulp.task('watch', function (e) {
-  gulp.watch(paths.scripts.all, ['build:watch:js']);
-  // gulp.watch(paths.styles.all, ['build:dev:scss', 'build:dev:inject']);
+  gulp.watch(paths.scripts.all, ['build:debug:js']);
+  gulp.watch(paths.styles.all, ['build:debug:scss']);
 });
