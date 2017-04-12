@@ -9,6 +9,7 @@ require('./lib/es6-template-strings');
 
 gulp.task('build:debug', gulpSequence(
   'build:debug:js',
+  'build:debug:scss',
   'es6-template-strings'
 ));
 gulp.task('build:release', gulpSequence(
