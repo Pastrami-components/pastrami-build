@@ -4,6 +4,7 @@ var paths = require('./lib/default-config').paths;
 
 require('./lib/bump');
 require('./lib/build-js');
+require('./lib/build-scss');
 require('./lib/docsApp');
 require('./lib/es6-template-strings');
 
